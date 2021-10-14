@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const http = require('http');
-app.use(express.static('public'));
+app.use(express.static('public'));      
 app.listen(8000)
 var Ddos = require('ddos')
     var ddos = new Ddos({burst:3,limit:4,maxcount:15,maxexpiry:120,checkinterval:1,testmode:false,responseStatus:429,errormessage:'Atmalan'});
